@@ -6,6 +6,28 @@ public class DirectorEmpleado implements Empleados {
 	
 	private CreacionInformes informeNuevo;
 	
+	private String email;
+	
+	private String nombreEmpresa;
+	
+	
+	
+	public String getEmail() {
+		return email;
+	}
+
+	public void setEmail(String email) {
+		this.email = email;
+	}
+
+	public String getNombreEmpresa() {
+		return nombreEmpresa;
+	}
+
+	public void setNombreEmpresa(String nombreEmpresa) {
+		this.nombreEmpresa = nombreEmpresa;
+	}
+
 	//Creación de constructor que inyecta la dependencia
 	public DirectorEmpleado(CreacionInformes informeNuevo) {
 		this.informeNuevo = informeNuevo;

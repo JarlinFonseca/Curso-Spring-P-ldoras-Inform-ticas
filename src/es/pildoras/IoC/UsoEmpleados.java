@@ -17,15 +17,34 @@ public class UsoEmpleados {
 		
 		Empleados Juan =contexto.getBean("miEmpleado", Empleados.class);
 		
+		System.out.println("Jefe de la empresa: Juan");
+		
 		System.out.println(Juan.getTareas());
 		
 		System.out.println(Juan.getInforme());
 		
-		Empleados Lucas =contexto.getBean("miSecretarioEmpleado", Empleados.class);
+		SecretarioEmpleado Lucas =contexto.getBean("miSecretarioEmpleado", SecretarioEmpleado.class);
 		
+		SecretarioEmpleado Pablo =contexto.getBean("miSecretarioEmpleado", SecretarioEmpleado.class);
+		
+		System.out.println("Secretario de la empresa: Lucas");
 		System.out.println(Lucas.getTareas());
 		
 		System.out.println(Lucas.getInforme());
+		
+		System.out.println("Email: "+Lucas.getEmail());
+		
+		System.out.println("Empresa: "+Lucas.getNombreEmpresa());
+		
+		System.out.println("Email de Pablo: "+Lucas.getEmail());
+		
+		DirectorEmpleado Maria =contexto.getBean("miDirectorEmpleado", DirectorEmpleado.class);
+		System.out.println("Director de la empresa: Maria");
+		
+		System.out.println(Maria.getTareas());
+		System.out.println(Maria.getInforme());
+		System.out.println(Maria.getEmail());
+		System.out.println(Maria.getNombreEmpresa());
 		
 		contexto.close();
 		

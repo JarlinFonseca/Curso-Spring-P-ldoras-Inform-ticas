@@ -4,12 +4,38 @@ public class JefeEmpleado implements Empleados {
 	//Creación de campo tipo creaciónInforme(interfaz)
 
 	private CreacionInformes informeNuevo;
-		
-	//Creación de constructor que inyecta la dependencia
 	
+	private String email;
+	
+	private String nombreEmpresa;
+	
+	
+	//Creación de constructor que inyecta la dependencia
 	public JefeEmpleado(CreacionInformes informeNuevo) {
 		this.informeNuevo = informeNuevo;
 	}
+	
+	
+	public String getEmail() {
+		return email;
+	}
+
+
+	public void setEmail(String email) {
+		this.email = email;
+	}
+
+
+	public String getNombreEmpresa() {
+		return nombreEmpresa;
+	}
+
+
+	public void setNombreEmpresa(String nombreEmpresa) {
+		this.nombreEmpresa = nombreEmpresa;
+	}
+
+
 
 		
 	@Override
