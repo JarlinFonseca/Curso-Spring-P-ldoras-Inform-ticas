@@ -2,7 +2,7 @@ package es.pildoras.IoC;
 
 public class JefeEmpleado implements Empleados {
 	//Creación de campo tipo creaciónInforme(interfaz)
-	
+
 	private CreacionInformes informeNuevo;
 		
 	//Creación de constructor que inyecta la dependencia
