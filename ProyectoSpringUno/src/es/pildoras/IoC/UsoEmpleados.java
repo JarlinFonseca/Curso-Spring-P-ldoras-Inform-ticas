@@ -24,7 +24,7 @@ public class UsoEmpleados {
 		System.out.println(Juan.getInforme());
 		
 		SecretarioEmpleado Lucas =contexto.getBean("miSecretarioEmpleado", SecretarioEmpleado.class);
-		
+		System.out.println(Juan.equals(Lucas));
 		
 		System.out.println("Secretario de la empresa: Lucas");
 		System.out.println(Lucas.getTareas());

@@ -12,30 +12,10 @@
 <!--Creación de la dependencia -->
 <bean id="miInforme" class="es.pildoras.IoC.Informe"></bean>
 
-<bean id="miEmpleado" class="es.pildoras.IoC.JefeEmpleado">
-	<constructor-arg ref="miInforme"></constructor-arg>
-	
-	<property name="email" value="jefe@pildorasinformaticas.es"></property>
-	
-	<property name="nombreEmpresa" value="Píldoras Informáticas"></property>
-	
-</bean>
 
-<bean id="miDirectorEmpleado" class="es.pildoras.IoC.DirectorEmpleado">
-	<constructor-arg ref="miInforme"></constructor-arg>
-	
-	<property name="email" value="${email}"></property>
-	
-	<property name="nombreEmpresa" value="${nombreEmpresa}"></property>
-	
-</bean>
-
-<bean id="miSecretarioEmpleado" class="es.pildoras.IoC.SecretarioEmpleado">
+<bean id="miSecretarioEmpleado" class="es.pildoras.IoC.SecretarioEmpleado" scope="prototype">
 	<property name="informeNuevo" ref="miInforme"></property>
 	
-	<property name="email" value="secretaria@pildorasinformaticas.es"></property>
-	
-	<property name="nombreEmpresa" value="Píldoras Informáticas"></property>
 </bean>
 
 </beans>
