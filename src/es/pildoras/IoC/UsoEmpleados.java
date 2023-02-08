@@ -25,7 +25,6 @@ public class UsoEmpleados {
 		
 		SecretarioEmpleado Lucas =contexto.getBean("miSecretarioEmpleado", SecretarioEmpleado.class);
 		
-		SecretarioEmpleado Pablo =contexto.getBean("miSecretarioEmpleado", SecretarioEmpleado.class);
 		
 		System.out.println("Secretario de la empresa: Lucas");
 		System.out.println(Lucas.getTareas());
