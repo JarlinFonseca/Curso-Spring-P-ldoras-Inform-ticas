@@ -1,17 +1,33 @@
 package es.pildoras.pruebaannotations;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Component;
 
 @Component
 public class ComercialExperimentado implements Empleados {
-
-	private CreacionInformeFinanciero creacionInformeFinanciero;
 	
 	@Autowired
-	public ComercialExperimentado(CreacionInformeFinanciero creacionInformeFinanciero) {
-		this.creacionInformeFinanciero = creacionInformeFinanciero;
-	}
+	@Qualifier("informeFinancieroTrim4") // been ID que debe utilizar
+	private CreacionInformeFinanciero creacionInformeFinanciero;
+	
+	
+	  public ComercialExperimentado(){
+	  
+	  }
+	 
+	
+		/*
+		 * @Autowired public ComercialExperimentado(CreacionInformeFinanciero
+		 * creacionInformeFinanciero) { this.creacionInformeFinanciero =
+		 * creacionInformeFinanciero; }
+		 */
+	
+		/*
+		 * @Autowired public void q(CreacionInformeFinanciero creacionInformeFinanciero)
+		 * { this.creacionInformeFinanciero = creacionInformeFinanciero; }
+		 */
+
 
 	@Override
 	public String getTareas() {
