@@ -38,13 +38,13 @@ public class ComercialExperimentado implements Empleados, InitializingBean, Disp
 	  // Ejecución de código después de creación del Bean
 	  // Se ejecuta despues de que se crea el bean (remplaza @PostConstruct )
 	  public void afterPropertiesSet()  {
-		  System.out.println("Ejecutado tras creación de Bean");
+		  //System.out.println("Ejecutado tras creación de Bean");
 	  }
 	  
 	  // Ejecuación de código después de apagado contenedor Spring
 	  // Se ejecuta antes de la destruccion del bean (remplaza @PreDestroy )
 	  public void destroy() {
-		  System.out.println("Ejecutando antes de la destrucción");
+		  //System.out.println("Ejecutando antes de la destrucción");
 	  }
 	  
 

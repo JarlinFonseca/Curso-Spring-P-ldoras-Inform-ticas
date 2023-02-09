@@ -30,6 +30,11 @@ public class UsoAnnotation2 {
 			System.out.println("No apuntan al mismo lugar en memoria");
 			System.out.println(Antonio+"\n"+Lucia);
 		}
+		
+		Empleados Lucas = contexto.getBean("directorFinanciero", Empleados.class);
+		
+		System.out.println("Lucas: "+Lucas.getInforme());
+		System.out.println(Lucas.getTareas());
 		// Cerrar el contexto
 		contexto.close();
 
