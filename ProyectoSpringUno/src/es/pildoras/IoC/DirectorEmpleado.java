@@ -10,7 +10,17 @@ public class DirectorEmpleado implements Empleados {
 	
 	private String nombreEmpresa;
 	
+	// método init. Ejecutar tareas antes de que el bean esté disponible
+	public void metodoInicial() {
+		System.out.println("Dentro del método init. Aquí irían las tareas a ejecutar "+
+	" antes de que el bean esté listo");
+	}
 	
+	// método destroy. Ejecutar tareas después de que el bean haya sido utilizado
+	public void metodoFinal() {
+		System.out.println("Dentro del método destroy. Aquí irían las tareas a ejecutar "+
+	" despues de utilizar el bean");
+	}
 	
 	public String getEmail() {
 		return email;
