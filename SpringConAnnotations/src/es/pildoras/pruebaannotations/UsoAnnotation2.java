@@ -31,10 +31,11 @@ public class UsoAnnotation2 {
 			System.out.println(Antonio+"\n"+Lucia);
 		}
 		
-		Empleados Lucas = contexto.getBean("directorFinanciero", Empleados.class);
+		DirectorFinanciero Lucas = contexto.getBean("directorFinanciero", DirectorFinanciero.class);
 		
 		System.out.println("Lucas: "+Lucas.getInforme());
 		System.out.println(Lucas.getTareas());
+		System.out.println("Email del director: "+Lucas.getEmail()+", y nombre de la Empresa: "+Lucas.getNombreEmpresa());
 		// Cerrar el contexto
 		contexto.close();
 
