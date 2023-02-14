@@ -7,8 +7,13 @@
 <title>Respuesta de Formulario</title>
 </head>
 <body>
-
+<h1>
 Hola ${param.nombreAlumno}. Bienvenido al curso de Spring!
+</h1>
+
+<br>
+<h2>Atención a todos</h2>
+<p>${mensajeClaro}</p>
 
 </body>
 </html>
