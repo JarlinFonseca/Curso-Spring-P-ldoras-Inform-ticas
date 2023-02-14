@@ -4,14 +4,11 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title>MVC- Spring</title>
+<title>Respuesta de Formulario</title>
 </head>
 <body>
-	<h1>
-		Primer Ejemplo de MVC con Spring 
-	</h1>
-	
-	<a href="muestraFormulario">Ir al Formulario</a>
+
+Hola ${param.nombreAlumno}. Bienvenido al curso de Spring!
 
 </body>
 </html>
