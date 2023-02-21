@@ -7,7 +7,7 @@
 <title>Formulario</title>
 </head>
 <body>
-	<form action="procesarFormulario2" method="POST">
+	<form action="principal/procesarFormulario2" method="POST">
 	
 	<label for="nombreAlumno">Nombre:</label>
 	<input type="text" name="nombreAlumno" id="nombreAlumno">
