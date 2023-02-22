@@ -21,6 +21,13 @@
 		
 		
 		Edad: <form:input path="edad"/>
+		<form:errors path="edad" style="color:red;"></form:errors>
+		
+		<br><br><br>
+		
+		Email: <form:input path="email"/>
+		<form:errors path="email" style="color:red;"></form:errors>
+		
 		
 		<br><br><br>
 		<form:label path="optativa">Asignaturas Optativas:</form:label>
