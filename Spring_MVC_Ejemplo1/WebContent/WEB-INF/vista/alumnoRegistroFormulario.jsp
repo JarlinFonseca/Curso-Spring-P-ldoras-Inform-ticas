@@ -26,6 +26,21 @@
 		</form:select>
 		<br><br><br>
 		
+		
+		Barcelona<form:radiobutton path="ciudadEstudios" value="Barcelona"/>
+		Madrid<form:radiobutton path="ciudadEstudios" value="Madrid"/>
+		Valencia<form:radiobutton path="ciudadEstudios" value="Valencia"/>
+		Bilbao<form:radiobutton path="ciudadEstudios" value="Bilbao"/>
+		
+		<br><br><br>
+		
+		Inglés<form:checkbox path="idiomasAlumno" value="Inglés"/>
+		Francés<form:checkbox path="idiomasAlumno" value="Francés"/>
+		Alemán<form:checkbox path="idiomasAlumno" value="Alemán"/>
+		Mandarín<form:checkbox path="idiomasAlumno" value="Mandarín"/>
+		
+		<br><br><br>
+		
 		<input type="submit" value="Enviar">
 	
 	
