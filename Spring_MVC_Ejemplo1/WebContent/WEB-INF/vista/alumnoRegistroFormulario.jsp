@@ -17,6 +17,14 @@
 		<form:input path="apellido"/>
 		
 		<br><br><br>
+		<form:label path="optativa">Asignaturas Optativas:</form:label>
+		<form:select path="optativa" multiple="true">
+			<form:option value="Diseño" label="Diseño"></form:option>
+			<form:option value="Karate" label="Karate"></form:option>
+			<form:option value="Comercio" label="Comercio"></form:option>
+			<form:option value="Danza" label="Danza"></form:option>
+		</form:select>
+		<br><br><br>
 		
 		<input type="submit" value="Enviar">
 	

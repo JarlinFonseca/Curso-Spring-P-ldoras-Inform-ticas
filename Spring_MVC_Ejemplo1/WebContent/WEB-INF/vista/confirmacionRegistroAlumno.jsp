@@ -10,6 +10,7 @@
 <body>
 	<h3>El alumno con nombre ${alumno.nombre} y apellido ${alumno.apellido} 
 	se ha registrado con éxito</h3>
+	<h4>La asignatura escogida es: ${alumno.optativa}</h4>
 
 </body>
 </html>
