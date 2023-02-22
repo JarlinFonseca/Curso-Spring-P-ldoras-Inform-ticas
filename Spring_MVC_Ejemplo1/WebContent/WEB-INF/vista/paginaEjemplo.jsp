@@ -11,7 +11,11 @@
 		Primer Ejemplo de MVC con Spring 
 	</h1>
 	
-	<a href="alumno/muestraFormulario">Ir al Formulario</a>
+	<a href="principal/muestraFormulario">Ir al Formulario</a>
+	
+	<br><br>
+	
+	<a href="alumno/muestraFormulario">Ir al Formulario de Registro</a>
 
 </body>
 </html>
