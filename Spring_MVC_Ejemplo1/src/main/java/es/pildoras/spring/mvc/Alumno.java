@@ -1,5 +1,7 @@
 package es.pildoras.spring.mvc;
 
+import javax.validation.constraints.NotBlank;
+import javax.validation.constraints.NotEmpty;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
 
@@ -8,10 +10,15 @@ public class Alumno {
 	@NotNull
 	@Size(min=2, message="Campo requerido")
 	private String nombre;
+	@NotBlank
 	private String apellido;
+	@NotEmpty
 	private String optativa;
+	@NotEmpty
 	private String ciudadEstudios;
+	@NotEmpty
 	private String idiomasAlumno;
+	private int edad;
 	
 	
 	public String getNombre() {
@@ -44,5 +51,12 @@ public class Alumno {
 	public void setIdiomasAlumno(String idiomasAlumno) {
 		this.idiomasAlumno = idiomasAlumno;
 	}
+	public int getEdad() {
+		return edad;
+	}
+	public void setEdad(int edad) {
+		this.edad = edad;
+	}
+	
 		
 }
